@@ -1,0 +1,108 @@
+@import 'variables'
+
+.member__avatar
+  width 100%
+  height: auto
+  max-width 320px
+  display block
+  margin auto
+
+.member__title
+  font-family Roboto, sans-serif
+  font-size 1.4rem
+  font-weight bold
+
+.member__text
+  font-family Roboto, sans-serif
+  font-size 1rem
+  font-weight normal
+
+.member__screenshot
+  width 100%
+  height: auto
+  display block
+
+.member__contacts
+  list-style none
+  padding: 0;
+  margin: 10px 0
+  overflow: hidden
+
+.member__contact
+  float left
+
+.member__link
+  font-family Roboto, sans-serif
+  font-size .8rem
+  line-height 1.5rem
+  height 1.5rem
+  display inline-block
+  font-weight: bold
+  color inherit
+  text-decoration none
+  padding: 0 10px
+  margin: 0 5px
+  border-radius 0.2rem
+  transition tt
+  &:hover,
+  &_important
+    color white
+    transition tt
+
+  // Color names
+
+.members__slide:nth-child(4n+1) .member__title
+  color blue
+
+.members__slide:nth-child(4n+2) .member__title
+  color green
+
+.members__slide:nth-child(4n+3) .member__title
+  color yellow
+
+.members__slide:nth-child(4n+4) .member__title
+  color red
+
+  // Color links
+
+.members__slide:nth-child(4n+1)
+  .member__link:hover, .member__link.member__link_important
+    background-color blue
+
+.members__slide:nth-child(4n+2)
+  .member__link:hover, .member__link.member__link_important
+    background-color green
+
+.members__slide:nth-child(4n+3)
+  .member__link:hover, .member__link.member__link_important
+    background-color yellow
+
+.members__slide:nth-child(4n+4)
+  .member__link:hover, .member__link.member__link_important
+    background-color red
+
+@media screen and (max-width: 767px)
+  .member__avatar
+    max-width 180px
+
+  .member__title,
+  .member__text
+    text-align center
+    padding 0 1rem
+
+  .member__screenshot
+    max-width 290px
+    margin: auto
+
+  .member__contacts
+    text-align center
+
+  .member__contact
+    float none
+    display: inline-block
+
+  .member__link
+    margin-bottom: 1rem
+
+  .member__half
+    text-align center

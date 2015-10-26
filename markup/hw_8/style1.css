@@ -1,0 +1,53 @@
+.arrow_box 
+{
+    height: 40px;
+    width: 490px;
+    min-width: 50%;
+    background: #FFCD5D;
+    padding: 5px;
+    font-size: 11px;
+    font-family: Arial,Helvetica,sans-serif;
+    -margin: 50px auto;
+    position: relative;
+}
+
+
+.arrow_box:after 
+{
+    content: '';
+    border: 25px solid transparent;
+    border-left: 12px solid #FFCD5D;
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+
+
+input[type="checkbox"] 
+{
+    margin: 5px 0;
+}
+
+span.checkbox
+{
+
+    margin-left: 5px;
+    vertical-align: top;
+    height: 10px;
+    line-height: 20px;
+}
+
+input[type="text"] 
+{
+    width: 85%;
+    height: 17px;
+    margin-right: 2px;
+    position: relative;
+}
+
+input.arrow_button 
+{
+    padding: 2px 10px;
+    position: absolute;
+}

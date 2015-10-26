@@ -1,0 +1,172 @@
+.intro {
+    max-width: 1920px;
+    width: 100%;
+    height: 351px;
+    background: url(../img/heder_bottom_bg.png) no-repeat center center;
+    background-size: cover;
+    color: white;
+    margin: 0 auto;
+}
+
+.intro_inner {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 3% 0 0 10%;
+    position: relative;
+}
+
+.intro_txt h1 {
+    color: #fff;
+    font: 700 50px / 42px Helvetica;
+    text-transform: uppercase;
+    margin: 30px 0 10px;
+    padding: 0;
+}
+
+.intro_txt p {
+    color: #fff;
+    font: 400 30px / 40px Helvetica;
+    /*width: 550px;*/
+    
+    width: 51%;
+    text-align: left;
+    margin: 10px 0;
+}
+
+.intro_form {
+    position: absolute;
+    width: 360px;
+    height: 541px;
+    box-sizing: border-box;
+    border-bottom: 5px solid #3497D9;
+    top: 30px;
+    right: 10%;
+    background-color: #fff;
+}
+
+.intro_form h2 {
+    color: #333333;
+    font: 400 25px / 20px Helvetica;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 78px;
+}
+
+.intro_form form {
+    margin: 0 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.intro_form form input[name="select_course"] {
+    background: url(../img/row_down.png) no-repeat center right 10px;
+    background-color: #f2f2f2;
+}
+
+.intro_form form input {
+    width: 320px;
+    height: 36px;
+    margin-bottom: 10px;
+    background-color: #f2f2f2;
+    border: 1px solid #E5E5E5;
+    padding-left: 17px;
+    color: #333333;
+    font: 400 15px / 20px Helvetica;
+    box-sizing: border-box;
+}
+
+.intro_form form textarea {
+    width: 320px;
+    height: 76px;
+    resize: none;
+    margin-bottom: 7px;
+    padding: 10px 17px;
+    background-color: #f2f2f2;
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    color: #333333;
+    font: 400 15px / 20px Helvetica;
+}
+
+::-webkit-resizer {
+    display: none;
+}
+
+::-webkit-input-placeholder {
+    color: #333333;
+    font: 400 15px / 20px Helvetica;
+}
+
+.intro_form form input[type="submit"] {
+    background-color: #e74c3c;
+    margin: 18px auto;
+    padding-left: 0;
+    width: 220px;
+    height: 50px;
+    color: #fff;
+    font: 400 25px / 28px Helvetica;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 1000px) and (min-width: 800px) {
+    .intro {
+        max-width: 800px;
+        width: 100%;
+    }
+    .intro_inner {
+        width: 800px;
+        padding: 3% 0 0 3%;
+    }
+    .intro_txt h1 {
+        color: #fff;
+        font: 700 45px / 42px Helvetica;
+    }
+    .intro_txt p {
+        width: 375px;
+        color: #fff;
+        font: 400 25px / 36px Helvetica;
+    }
+    .intro_form {
+        width: 340px;
+        right: 20px;
+    }
+    .intro_form form input,
+    .intro_form form textarea {
+        width: 300px;
+    }
+    .intro_form form input[type="submit"] {
+        width: 200px;
+        font: 400 20px / 28px Helvetica;
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 799px) and (min-width: 320px) {
+    .intro {
+        width: 320px;
+    }
+    .intro_inner {
+        padding: 5px;
+        width: 320px;
+    }
+    .intro_txt h1 {
+        text-align: center;
+        font-size: 40px;
+    }
+    .intro_form {
+        position: static;
+        width: 300px;
+        margin: 0 auto;
+    }
+    .intro_txt p {
+        text-align: center;
+        font: 400 16px / 28px Helvetica;
+        width: 300px;
+        margin: 0 5px 25px;
+    }
+    .intro_form form input,
+    .intro_form form textarea {
+        width: 260px;
+    }
+}

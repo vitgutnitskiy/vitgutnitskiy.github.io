@@ -1,0 +1,82 @@
+@import 'variables'
+
+.intro
+  position relative
+  height: 100vh
+  min-height 420px
+  font-family: Roboto, sans-serif
+  box-sizing border-box
+
+.intro__wrap
+  overflow: hidden
+
+.intro__main
+  position absolute
+  top 0
+  bottom 0
+  left 0
+  right 0
+  margin auto
+  max-height 250px
+
+.intro__nav
+  position absolute
+  bottom 0
+  left 0
+  right 0
+  margin 1.5rem auto
+  max-width 360px
+  text-align center
+  color mtc
+  text-decoration none
+  transition tt
+  &:hover
+    color blue
+    border-radius .2rem
+    transition tt
+
+.intro__title
+  font-size 7rem
+  text-transform uppercase
+  text-align center
+  margin: 0 auto 1rem auto
+  color ltc
+  width 466px
+
+
+.intro__svg
+  width 100%
+  display block
+
+.intro__path
+  display block
+  width 100%
+
+
+.intro__description
+  text-align center
+  color ltc
+  font-size 1.2rem
+  max-width 620px
+  margin auto
+
+.intro__text
+  display block
+
+.intro__arrow
+  display block
+  font-size 3rem
+  transform scaleX(1.5)
+  max-width 100%
+
+@media screen and (max-width: 767px)
+  .intro__title
+    font-size 4rem
+    max-width 230px
+
+  .intro__description
+    font-size 1rem
+
+  .intro__nav
+    max-width 320px
+    overflow: hidden

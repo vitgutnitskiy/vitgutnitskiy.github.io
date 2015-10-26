@@ -1,0 +1,99 @@
+@import 'variables'
+
+.carousel__item
+  text-align: center
+  position: relative
+  overflow: hidden
+
+.carousel__item-image
+  padding-top: 30px
+  max-width 165px
+  margin auto
+
+.carousel__photo
+  width: 165px
+  height: 165px
+  display: inline-block
+  border-radius: 50%
+  overflow: hidden
+
+.carousel__title
+  font-size: 1.4rem
+  font-family: Roboto, sans-serif
+  font-weight: bold
+  color blue
+  margin 1rem 0
+
+.carousel__description
+  font-family: Roboto, sans-serif
+  font-size: 1rem
+  color: ltc
+  margin: 0
+
+.carousel__text
+  font-family: Roboto, sans-serif
+  font-size: 1rem
+  color: mtc
+  padding 0
+
+.owl-item:nth-child(4n+3) .carousel__title // (4n + 1 + 2) because 2 cloned items
+  color blue
+.owl-item:nth-child(4n+4) .carousel__title
+  color green
+.owl-item:nth-child(4n+1) .carousel__title
+  color yellow
+.owl-item:nth-child(4n+2) .carousel__title
+  color red
+
+.owl-controls
+  text-align: center 
+  .owl-dot
+    width: 1rem
+    height: 1rem
+    background-color: blue
+    display: inline-block
+    margin: 0 5px
+    border-radius: 50%
+    transition tt
+    &.active
+      transform scale(1.4)
+      transition tt
+    &:hover
+      transform scale(1.4)
+      cursor pointer
+      transition tt
+  .owl-dot:nth-child(4n+2)
+    background-color: green
+    &.active
+      transform scale(1.4)
+  .owl-dot:nth-child(4n+3)
+    background-color: yellow
+    &.active
+      transform scale(1.4)
+  .owl-dot:nth-child(4n+4)
+    background-color: red
+    &.active
+      transform scale(1.4)
+
+  .owl-nav
+    position: absolute
+    top: 35%
+    width: 100%
+    &:hover 
+      opacity: .7
+      cursor pointer
+    div
+      width: 16px
+      height: 29px
+      background-image: url("images/slider_bg.png")
+      left: 96%
+  .owl-next 
+    position: absolute
+    top: 0
+    right: 20px
+    background-position: -16px 0
+
+@media screen and (max-width: 767px)
+  .carousel__text
+    margin: 1rem 0
+    text-align left

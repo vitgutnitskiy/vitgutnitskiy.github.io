@@ -1,0 +1,27 @@
+a[href^="/"] 
+{
+	color: blue;
+}
+
+a[href$=".ru"] 
+{
+	color: #f70;
+}
+
+a[href*="google"] 
+{
+	color: #666;
+}
+
+a[target="_blank"]:after
+{
+	content: "\21F1";
+	margin-left: 5px;
+	position: absolute;
+	color: #f70;
+	-moz-transform: rotate(90deg); /* Firefox */
+	-webkit-transform: rotate(90deg); /* Safari, Chrome */
+	-o-transform: rotate(90deg); /* Opera */
+	transform: rotate(90deg);
+	font-family: Camria;
+}

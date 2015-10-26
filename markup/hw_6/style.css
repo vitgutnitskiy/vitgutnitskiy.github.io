@@ -1,0 +1,225 @@
+* {font-family: "Trebuchet MS", sans-serif;}
+
+.cont_price_bg 
+{
+	width: 1400px;
+	height: 700px;
+	margin: 0 auto;
+	border: 1px solid black;
+	position: relative;
+}
+
+
+.cont_price_bg h2 
+{
+	text-transform: uppercase;
+	color: #41525C;
+	font-size: 21px;
+	line-height: 100px;
+	text-align: center;
+}
+.container 
+{
+	left: 50%;
+	position: absolute;
+	margin: auto 0 0 -30%;
+
+}
+
+.blue 
+{
+	width: 288px;
+	height: 440px;
+	border: 1px solid lightgrey;
+	z-index: -1;
+	position: absolute;
+	top: 10px;
+}
+
+.orange 
+{
+	width: 288px;
+	height: 460px;
+	border: 4px solid #EE8129;
+	box-shadow: 0 0 15px #a8c0cd;
+	position: absolute;
+	left: 288px;
+
+}
+
+.green 
+{
+	width: 288px;
+	height: 440px;
+	border: 1px solid lightgrey;
+	z-index: -1;
+	position: absolute;
+	left: 580px;
+	top:10px;
+}
+
+.cont_price 
+{
+	background: white;
+	border-radius: 5px;
+	margin: 0 auto;
+	float: left;
+}
+
+
+.cont_price_header
+{
+	width: 100%;
+	height: 16%;
+	margin: 0 auto;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	font-family: sans-serif;
+	font-size: 22px;
+}
+
+.blue>.cont_price_header
+{
+	width: 99.3%;
+	background: #42C0D8;
+	border: 1px solid #42C0D8;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
+
+.orange>.cont_price_header
+{
+	background: #EE8129;
+	border: 1px solid #EE8129;
+}
+
+.green>.cont_price_header
+{
+	width: 99.3%;
+	background: #00C598;
+	border: 1px solid #00C598;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
+.cont_price_header_1
+{
+	height: 15%;
+	width: 100%;
+	text-transform: uppercase;
+	font-size: 22px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.cont_price_header_1 span 
+{
+	position: relative;
+	width: 100%;
+	height: 50%;
+	vertical-align: middle;
+	line-height: 100%;
+	display: block;
+	margin: 5% auto;
+}
+
+.cont_price_center p 
+{
+	font-size: 72px;
+	font-weight: bold;
+	margin: -10% auto 0 auto;
+	text-align: center;
+}
+
+.cont_price_center p:before
+{
+	content: "$";
+	font-size: 19px;
+	vertical-align: top;
+}
+
+.cont_price_center p:after
+{
+	content: "Montly";
+	font-size: 17px;
+	vertical-align: bottom;
+}
+
+
+.cont_price_list
+{
+	width: 90%; /*260 на 135 */
+	height: 30%;
+	margin: 0 auto;
+	font-weight: bold;
+}
+
+.cont_price_list ul {width: 100%;
+	margin-left: -15%;}
+
+	.cont_price_list li:before
+	{
+		content:  url("task2_03.gif");
+		margin-right: 15px;
+		margin-left: 30px;
+	}
+
+	.cont_price_list ul li
+	{
+		list-style-type: none;
+		width: 100%;
+		text-align: left;
+		font-size: 12px;
+		color: #91949B;
+		line-height: 250%;
+	}
+
+	.cont_price_list li:nth-child(2n+1)
+	{
+		background: #edf5fd;
+		border-bottom: 1px solid white;
+	}
+
+	.cont_price_list li:nth-child(2n+2)
+	{
+		background: #f5f5f6;
+		border-bottom: 1px solid white;
+	}
+
+	.cont_price_btn {
+		width: 100%;
+		height: 10%;
+		margin:0 auto;
+	}
+
+	.cont_price_btn button
+	{
+		background: #EE8129;
+		margin-left: 5%;
+		color: white;
+		font-weight: bold;
+		width: 90%;
+		height: 38px;
+		border: 1px solid #EE8129;
+		border-bottom: 3px solid #9b4e1c;
+		border-radius: 5px;
+		cursor: pointer;
+	}
+	.cont_price_bg {
+		z-index: 1;
+	}
+
+	.cont_price_btn {
+		z-index: 2;
+	}
+
+	.blue button, .green button
+	{
+		background: #4956AC;
+		cursor: pointer;
+		border: 1px solid #4956AC;
+		border-bottom: 3px solid #2C306F;
+	}

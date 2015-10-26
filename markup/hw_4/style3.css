@@ -1,0 +1,112 @@
+#container
+{
+	width: 560px;
+	font-family: sans-serif;
+}
+
+#pager 
+{
+	width: 100%;
+	margin: 10px auto;
+
+}
+
+span:not(.nav) 
+{
+
+	display: inline-block;
+	height: 25px;
+	width: 25px;
+	border: 1px solid #DDDDDD;
+	text-align: center;
+	border-radius: 5px;
+	font-size: 12px;
+	margin-right: 2px;
+}
+
+span.nav
+{
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: bolder;
+}
+
+.nav:nth-child(1):before, .nav:nth-child(2):before 
+{
+
+   /* content: "<<";
+    color: #A13AD1;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 3px;
+    */
+    content: '\ab';
+    font-size: 12px;
+    padding-right: 3px;
+    color: #A13AD1;
+    height: 25px;
+  }
+
+  .nav:nth-last-child(1):after, .nav:nth-last-child(2):after 
+  {
+/*
+    content: ">>";
+    color: #A13AD1;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 3px;
+    */
+    content: '\bb';
+    font-size: 12px;
+    padding-left: 3px;
+    color: #A13AD1;
+    height: 25px;
+  }
+
+  .nav:nth-child(1), .nav:nth-last-child(2)
+  {
+  	margin-right: 20px;
+  }
+
+  .nav:nth-child(2)
+  {
+  	margin-right: 10px;
+  }
+
+  .nav:nth-last-child(2)
+  {
+  	margin-left: 10px;
+  }
+
+  a
+  {
+  	display: inline-block;
+  	text-decoration: none;
+  	line-height: 25px;
+  	height: 25px;
+  	color: #A13AD1;
+  	text-align: center;
+  	border-radius: 5px;
+  	vertical-align: middle;
+
+  }
+
+  span:not(.nav):hover, a:hover 
+  {
+  	background: #A13AD1;
+  	color: white;
+  }
+
+
+  span:not(.nav)>a 
+  {
+  	width: 25px; 
+  	border-radius: 5px;
+  }
+
+  span.nav>a 
+  {
+  	background: none; 
+  	color: #A13AD1;
+  }

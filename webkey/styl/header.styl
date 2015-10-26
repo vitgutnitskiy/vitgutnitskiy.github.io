@@ -1,0 +1,112 @@
+@import 'variables'
+
+.header
+  height 10vh
+  width 100%
+  min-height 50px
+  font-family: Roboto, sans-serif
+  font-size 1.2rem
+  position fixed
+  left 0
+  z-index 3
+  transition tt
+
+.header_fixed
+  height 50px
+  background-color white
+  box-shadow 0 0 .5rem ltc
+  transition tt
+
+.header__wrap
+  position absolute
+  left 0
+  right 0
+  bottom 0
+
+.header__logo
+  overflow: hidden
+
+.header__menu
+  list-style none
+  padding: 0
+  margin: auto 0
+  overflow: hidden
+
+.header__link
+  display block
+  padding .5rem 0
+  box-sizing border-box
+  color mtc
+  text-decoration none
+  text-align center
+  border-bottom .3rem solid transparent
+  transition tt
+  &:hover
+    border-bottom .3rem solid blue
+    transition tt
+
+.header__link_logo
+  display inline-block
+  text-align left
+  color blue
+  &:hover
+    border-bottom .3rem solid transparent
+
+.header__link_red
+  color red
+
+.header__menu-button
+  display none
+
+@media screen and (max-width: 991px)
+  .header
+    min-height 40px
+
+  .header_fixed
+    left 0
+    height 40px
+
+  .header__menu
+    position absolute
+    height 0
+    overflow: hidden
+    z-index 2
+    opacity 0
+    transition opacity tt
+
+  .header__menu_open
+    height 100vh
+    width 100%
+    position absolute
+    top 40px
+    right 0
+    background-color rgba(white, .9)
+    border-bottom: .3rem solid ltc
+    opacity 1
+    transition opacity tt
+
+  .header__link
+    max-width 300px
+    margin 0 auto 1rem auto
+
+  .header__link_logo
+    float left
+    margin-bottom 0
+
+  .header__menu-button
+    display block
+    height 40px
+    width: 50px
+    float right
+    cursor pointer
+    border none
+    padding: 0
+    font-size 2rem
+    color ltc
+    background-color transparent
+    transition tt
+    &:hover
+      color blue
+
+  .body_no-scroll
+    overflow-y hidden

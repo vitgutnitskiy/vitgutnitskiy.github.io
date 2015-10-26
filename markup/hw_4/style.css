@@ -1,0 +1,47 @@
+div 
+{
+	width: 900px;
+	margin: auto;
+	max-width: 1000px;
+	
+}
+ul {
+	width: 100%;
+	margin: auto;
+	background: #D700FF; 
+	background: linear-gradient(to top, #c800ff, #D700FF);
+}
+li 
+{
+	display: inline-block;
+	height: 25px;
+	font-size: 14px;
+	margin-right: 10px;
+	font-family: Impact;
+}
+ul:first-child
+{
+	margin-left: 40px;
+}
+
+a 
+{
+	display: block;
+	text-decoration: none;
+	line-height: 25px;
+	color: white;
+	text-align: center;
+	padding: 0 5px;
+}
+
+a:hover 
+{
+	background: #EDEDEE;
+	color: #B8B09E;
+}
+
+ul:hover 
+{
+	height: 25px;
+	box-shadow: 0 0 2px;
+}

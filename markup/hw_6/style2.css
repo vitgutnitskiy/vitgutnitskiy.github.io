@@ -1,0 +1,107 @@
+.testimonials 
+{
+	width: 1400px;
+	height: auto;
+	background: url(imeges/Layer-66-copy-2.png);
+	margin: 10px auto;
+}
+
+.testimonials_bg 
+{
+	width: 1400px;
+	height: auto;
+	background: rgba(0, 0, 0, 0.7);
+}
+
+.testimonials_title 
+{
+
+	height: 130px;
+}
+.testimonials h2
+{
+	font-size: 29px;
+	color: #2E69A0;
+	text-align: center;
+	line-height: 130px;
+
+}
+
+.testimonials h2 span {
+	color: #EE8129;
+	font-weight: 400;
+}
+
+.testimonials_cont 
+{
+	margin: 0 auto 60px; 
+	left: 140px; 
+	position: relative;  
+	display: inline-block;
+}
+
+.testimonials_photo
+{
+	width: 99px;
+	height: 98px; 
+	margin: 0 17px;
+}
+
+.testimonials_item 
+{
+	width: 380px;
+	height: auto;
+	background: white;
+	margin-left: 10px;
+	margin-right: 43px;
+	position: relative;
+}
+
+.testimonials_item:before 
+{
+	content: '';
+	border: 17px solid transparent;
+	border-right: 17px solid white;
+	position: absolute;
+	left: -32px;
+	top:34px;
+}
+
+.testimonials_photo, .testimonials_item {
+	float: left;
+
+}
+
+.testimonials_item_c_name, .testimonials_item_c_type
+{
+	color: #3070A8; 
+	font: italic 13px / 24px 'Trebuchet MS';
+	margin-bottom: 5px;
+}
+
+.testimonials_item_c_name
+{
+	float: left;
+	margin-left: 32px;
+}
+
+.testimonials_item_c_type
+{
+	float: right;
+	margin-right: 32px;
+}
+
+.testimonials_item_text
+{
+	clear: both;
+	margin: 0 0 5px 32px;
+	padding: 5px;
+	padding-top: 10px;
+	line-height: 20px;
+	border-top: 1px dotted #666666;
+	color: #666666;
+	width: 330px;
+	overflow: hidden;
+}
+
+.testimonials_photo {left: 190px;}

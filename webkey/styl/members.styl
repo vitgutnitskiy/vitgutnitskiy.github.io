@@ -1,0 +1,66 @@
+@import 'variables'
+
+.members
+  overflow: hidden
+
+.members__input
+  display none
+
+.members__slider
+  margin 1rem 0
+
+.members__slides
+  width 400%
+  overflow hidden
+  margin-left 0
+  transition all 800ms cubic-bezier(0.77, 0, 0.175, 1) 0s
+
+.members__slide
+  width 25%
+  height 100%
+  float left
+
+.members__controls
+  text-align center
+  margin 2rem 0
+
+.members__label
+  display inline-block
+  width 1rem
+  height 1rem
+  border none
+  border-radius 50%
+  background-color blue
+  cursor pointer
+  margin 0 5px
+  transition tt
+  &:nth-child(2)
+    background-color green
+  &:nth-child(3)
+    background-color yellow
+  &:nth-child(4)
+    background-color red
+  &:hover
+    transform scale(1.4)
+
+  // slides animation
+
+#member-1:checked ~ .members__slider .members__slides
+  margin-left 0
+#member-2:checked ~ .members__slider .members__slides
+  margin-left -100%
+#member-3:checked ~ .members__slider .members__slides
+  margin-left -200%
+#member-4:checked ~ .members__slider .members__slides
+  margin-left -300%
+
+  // controls animation
+
+#member-1:checked ~ .members__controls .members__label:nth-of-type(1)
+  transform scale(1.4)
+#member-2:checked ~ .members__controls .members__label:nth-of-type(2)
+  transform scale(1.4)
+#member-3:checked ~ .members__controls .members__label:nth-of-type(3)
+  transform scale(1.4)
+#member-4:checked ~ .members__controls .members__label:nth-of-type(4)
+  transform scale(1.4)

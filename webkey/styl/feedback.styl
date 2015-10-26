@@ -1,0 +1,75 @@
+@import 'variables'
+
+.error
+  color red
+
+.feedback
+  margin-top: 2rem
+  font-family: Roboto, sans-serif
+
+.feedback__title
+  font-family Roboto,sans-serif
+  font-weight: bold
+  color mtc
+  text-align center
+  margin: 1rem 0
+
+.feedback__input
+  display block
+  width 100%
+  line-height 1.5rem
+  padding 1px .5rem
+  margin-top: .8rem
+  font-size 1rem
+  color mtc
+  border-top 0
+  border-left 0
+  border-right 0
+  border-bottom .2rem solid ltc
+  outline none
+  transition tt
+  &:focus
+    border-bottom-color blue
+    transition tt
+
+.feedback__comment
+  resize none
+  font-family: inherit
+
+
+.feedback__text
+  font-family: Roboto, sans-serif
+  font-size 1rem
+  color mtc
+
+.feedback__button
+  border 0
+  background transparent
+  font-family Roboto, sans-serif
+  font-size 1rem
+  font-weight: bold
+  line-height 1.5rem
+  height 1.5rem
+  display: inline-block
+  transition tt
+  padding 0 10px
+  margin: 1rem 0 0 0
+  color mtc
+  float right
+  &:hover
+    color white
+    background-color blue
+    transition tt
+    border-radius .2rem
+
+.feedback__half
+  overflow: hidden
+  margin-bottom: 1rem;
+
+@media screen and (max-width: 767px)
+  .feedback__half
+    text-align center
+  .feedback__button
+    float none
+  .feedback__group
+    text-align left

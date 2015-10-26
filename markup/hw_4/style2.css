@@ -1,0 +1,47 @@
+nav 
+{
+	width: 900px;
+	height: 25px;
+	margin: auto;
+	background: #D700FF;
+	background: linear-gradient(to top, #c800ff, #D700FF);
+}
+
+nav>div
+{
+	float: left;
+}
+
+a 
+{
+	display: block;
+	text-decoration: none;
+	line-height: 25px;
+	color: white;
+	text-align: center;
+	padding: 0 5px;
+	font-size: 14px;
+	font-family: Impact;
+	text-transform: uppercase;
+}
+
+nav>div:first-child
+{
+	margin-left: 60px;
+}
+
+nav>div:last-child
+{
+	margin-right: 60px;
+	float: right;
+}
+nav>div
+{
+	margin-right: 15px;
+}
+
+a:hover 
+{
+	background: #EDEDEE;
+	color: #B8B09E; box-shadow: 0 0 3px;
+}

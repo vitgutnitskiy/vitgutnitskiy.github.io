@@ -1,0 +1,101 @@
+body
+{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 80px;
+}
+
+.sivtsev 
+{
+    width: 400px;
+    margin: 10px auto;
+    border: 1px solid lightgrey;
+    position: relative;
+    padding: 7px 7px 0 7px;
+    color: #555;
+
+       -webkit-filter: blur(2px);
+       -moz-filter: blur(2px);
+       -o-filter: blur(2px);
+       filter: blur(2px);
+}
+
+p 
+{
+   width: 400px;
+   line-height: 1em;
+   text-align: justify;
+   margin: 0;
+}
+
+p:after {
+  display: inline-block;
+  width: 100%;
+  content: " ";
+  margin: 20px;
+
+}
+
+p.sight20
+{
+    margin-bottom: -20px;
+}
+
+.sight01 
+{
+    font-size: 120%;
+    margin-top: 0;
+}
+.sight02
+{
+    font-size: 110%
+}
+.sight03 
+{
+    font-size: 100%
+}
+.sight04 
+{
+    font-size: 90%
+}
+.sight05 
+{
+    font-size: 80%
+}
+.sight06
+{
+    font-size: 70%
+}
+.sight07 
+{
+    font-size: 60%
+}
+.sight08 
+{
+    font-size: 50%
+}
+.sight09 
+{
+    font-size: 40%
+}
+.sight10 
+{
+    font-size: 30%
+}
+.sight15 
+{
+    font-size: 20%
+}
+.sight20 
+{
+    font-size: 10%
+}
+
+.uline 
+{
+    position: absolute;
+    width: 95%;
+    border-bottom: 1px solid red;
+    bottom: 1.4em;
+ }

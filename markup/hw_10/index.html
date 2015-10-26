@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <title>gallery</title>
+</head>
+
+<body>
+    <div class="gallery">
+        <div class="gallery_title">
+            <h2>Showcase your work like a pro.</h2>
+            <p>Contact me if you like my work</p>
+        </div>
+        <div class="img_block">
+            <img src="img/layer-30.png" alt="img_1" class="img" width="360" height="260" />
+            <div class="cover-bg"></div>
+            <a href="#" class="cover-btn zoom" onclick="img_big_open()"><img class="zoom" src="img/zoom.png" alt="img">
+            </a>
+            <a href="#" class="cover-btn link"><img class="link" src="img/link.png" alt="img">
+            </a>
+        </div>
+        <div class="img_block">
+            <img src="img/layer-31.png" alt="img_1" class="img" width="360" height="260" />
+            <div class="cover-bg"></div>
+            <a href="#" class="cover-btn zoom" onclick="img_big_open()"><img class="zoom" src="img/zoom.png" alt="img">
+            </a>
+            <a href="#" class="cover-btn link"><img class="link" src="img/link.png" alt="img">
+            </a>
+        </div>
+        <div class="img_block">
+            <img src="img/layer-32.png" alt="img_1" class="img" width="360" height="260" />
+            <div class="cover-bg"></div>
+            <a href="#" class="cover-btn zoom" onclick="img_big_open()"><img class="zoom" src="img/zoom.png" alt="img">
+            </a>
+            <a href="#" class="cover-btn link"><img class="link" src="img/link.png" alt="img">
+            </a>
+        </div>
+        <div class="img_block">
+            <img src="img/layer-33.png" alt="img_1" class="img" width="360" height="260" />
+            <div class="cover-bg"></div>
+            <a href="#" class="cover-btn zoom" onclick="img_big_open()"><img class="zoom" src="img/zoom.png" alt="img">
+            </a>
+            <a href="#" class="cover-btn link"><img class="link" src="img/link.png" alt="img">
+            </a>
+        </div>
+        <div class="img_block">
+            <img src="img/layer-34.png" alt="img_1" class="img" width="360" height="260" />
+            <div class="cover-bg"></div>
+            <a href="#" class="cover-btn zoom" onclick="img_big_open()"><img class="zoom" src="img/zoom.png" alt="img">
+            </a>
+            <a href="#" class="cover-btn link"><img class="link" src="img/link.png" alt="img">
+            </a>
+        </div>
+        <div class="img_block">
+            <img src="img/layer-35.png" alt="img_1" class="img" width="360" height="260" />
+            <div class="cover-bg"></div>
+            <a href="#" class="cover-btn zoom" onclick="img_big_open()"><img class="zoom" src="img/zoom.png" alt="img">
+            </a>
+            <a href="#" class="cover-btn link"><img class="link" src="img/link.png" alt="img">
+            </a>
+        </div>
+        <div id="shape"></div>
+        <div class="img_block_big" id="img_big">
+            <img src="img/Layer-37.png" class="img_big" height="550" width="1140" alt="img_big" />
+            <button class="img_block_big_btn" type="button" onclick="img_big_close()"></button>
+        </div>
+
+    </div>
+
+    <script>
+        function img_big_open() {
+            var shape = document.getElementById("shape");
+            shape.style.display = "inline-block";
+            var img_big = document.getElementById("img_big");
+            img_big.style.display = "block";
+            var elems = document.getElementsByClassName("img_block");
+            for (var i = 0; i < elems.length; i += 1) {
+                elems[i].style.display = 'none';
+            }
+        }
+    </script>
+
+
+
+    <script>
+        function img_big_close() {
+            var img_big = document.getElementById("img_big");
+            img_big.style.display = "none";
+            var shape = document.getElementById("shape");
+            shape.style.display = "none";
+            var elems = document.getElementsByClassName("img_block");
+            for (var i = 0; i < elems.length; i += 1) {
+                elems[i].style.display = 'inline-block';
+            }
+        }
+    </script>
+
+</body>
+
+</html>

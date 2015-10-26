@@ -1,0 +1,71 @@
+@import 'variables'
+
+.works
+  margin-top: 1.5rem
+  max-height 650px
+  overflow: hidden
+.work
+  font-family: Roboto, sans-serif
+  font-size 1rem
+  color mtc
+
+.work__screen
+  width 100%
+
+.work__name
+  font-weight: bold
+  margin 1rem 0;
+  &_blue
+    color blue
+  &_green
+    color green
+  &_yellow
+    color yellow
+
+.work__link
+  font-size .8rem
+  font-weight: bold
+  display inline-block
+  padding 0 10px
+  color mtc
+  text-decoration none
+  line-height 1.5rem
+  height: 1.5rem
+  transition tt
+  float right
+  &:hover
+    border-radius .2rem
+
+.work__link_blue:hover
+  color white
+  background-color blue
+  transition tt
+
+
+.work__link_green:hover
+  color white
+  background-color green
+  transition tt
+
+.work__link_yellow:hover
+  color white
+  background-color yellow
+  transition tt
+
+@media screen and (max-width: 767px)
+  .work
+    margin-bottom: 2rem
+    text-align center
+    max-height 500px
+    overflow: hidden
+    &:last-child
+      margin-bottom: 0
+
+  .work__screen
+    width 100%
+    max-width 320px
+    margin auto
+    display block
+
+  .work__link
+    float none

@@ -1,0 +1,297 @@
+@import "bourbon"
+$main-color: #f39f18
+$headers-color: #2c3949
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #fff
+body input:required:valid,
+body textarea:required:valid
+	color: #fff
+/*===========SECTION 1 =============*/
+.homesect
+	padding-top: 70px
+	background-color: #f9f9f9
+	position: relative
+	&:before
+		content: ""
+		height: 6px
+		position: absolute
+		width: 100%
+		top: -6px
+		background-image: url(img/bah_1.png)
+	.section-head
+		margin-bottom: 65px
+		p 
+			margin-top: 60px
+			text-align: center
+			a 
+				font-family: "RalewayBold", $helvetica
+				&:hover
+					text-decoration: none
+		h2 
+			text-align: center
+			position: relative
+			&:after 
+				position: absolute
+				content: ""
+				height: 4px
+				width: 165px
+				background-color: $main-color
+				display: block
+				bottom: -30px
+				left: 50%
+				transform: translate(-50%, 0)
+		h3 
+			text-align: center
+			margin-top: 40px
+			line-height: em(18px)
+
+.section-bottom  
+	background-color: #e5e5e5
+	padding: 52px 0
+	text-align: center
+
+.section_1
+	.section-content
+		background-image: url("img/s1_gray_bg.png")
+		background-repeat: no-repeat
+		background-position: top
+	.section-bottom
+		background-color: #2c3949
+
+.section-content
+	padding-bottom: 90px
+	position: relative
+	.info-item-wrap
+		&:nth-child(4), &:last-child
+			.info-irem
+				margin-bottom: 0
+	
+	.s1-bottom-triangle
+		height: 90px
+		position: absolute
+		bottom: 0
+		background-image: url("img/s1_triangle.svg")
+		z-index: 2
+		width: 100%
+		background-position: top
+		background-size: 100% 100%
+		text-align: center
+		.triangle-logo
+			width: 116px
+			margin-top: 30px;
+
+.s1-bottom-one
+	padding: 15px 0 65px
+	background-color: #394b5f 
+	.info-item
+		margin-top: 20px 0 0
+		p 
+			color: #fff
+			border-color: #546476
+	.info-item-wrap:nth-child(2)			
+		.info-item
+			margin-top: 34px
+
+.info-item
+	padding-left: 34px
+	max-width: 264px
+	line-height: em(19px)
+	margin: 55px 0
+	h4
+		margin-top: 0
+		margin-bottom: 10px
+		a
+			font-size: em(24px)
+			text-transform: none
+			line-height: em(14px)
+	p 	
+		font-size: em(16px)
+		border-bottom: 1px solid #dee1e5
+		padding-bottom: 20px
+
+.info-item-wrap:nth-child(2) 
+	.info-item
+		margin-top: 0px	
+
+.scales 
+	width: 160px
+	position: absolute
+	top:-130px
+	left: 50%
+	transform: translate(-50%, 0)
+	z-index: -1
+
+/*==============SECTION 2 =================*/
+
+.s2-items
+	padding-bottom: 40px
+	.s2-item
+		text-align: center
+		color: #111
+		margin-bottom: 75px
+		display: block
+		vertical-align: top
+		> span 
+			display: block
+		&-text 
+			font-size: em(14px)
+			line-height: em(16px)
+			font-family: "RalewayBold", $helvetica
+	.img-wrap 
+		padding-bottom: 32px
+		margin-bottom: 12px
+		display: block
+		position: relative
+		&:before
+			content: ""
+			position: absolute
+			height: 1px
+			background-color: $main-color
+			width: 58px
+			bottom: 0
+			left: 50%
+			transform: translate(-50%, 0)
+		img
+			max-width: 80px
+			max-height: 70px
+
+.s2-items-container
+	text-align: center
+
+.s2-item-wrap
+	display: inline-block
+	float: none
+	padding: 0 10px
+	width: 185px
+
+/*==========SECTION 3==============*/
+
+.s_dark
+	background-color: #2c3940
+	&:before
+		background-image: url("img/bah_2.png")
+	.section-head
+		h2 
+			color: #fff
+		p 
+			color: #e5e5e5
+
+.section_3
+	.section-head
+		margin-bottom: 25px
+	@extend .section_1
+	.section-content
+		min-height: 850px
+		background-image: url("img/s3_sun_bg.png")
+		padding-bottom: 0
+		padding-top: 40px
+		.info-item
+			margin-top: 60px
+			p 
+				color: #fff
+				border-bottom: none
+
+	.info-item-wrap
+		&:nth-child(2) 
+			.info-item
+				margin-top: 0px
+		&:nth-child(4), &:nth-child(6)
+			.info-item
+				margin-top: 50px
+		&:nth-child(8)
+			.info-item
+				margin-top: 110px
+		&:nth-child(1), &:nth-child(7)
+			.info-item
+				margin-left: 82px
+		&:nth-child(3), &:nth-child(9)
+			.info-item
+				margin-left: -40px
+		&:nth-child(6)
+			.info-item
+				margin-left: 25px
+
+.s3-img-wrap
+	width: 130px
+	height: 130px
+	background-color: $main-color
+	text-align: center
+	border-radius: 10em
+	margin: 20px 0 0 114px
+	img 
+		width: 70px
+		margin-top: 29px
+
+.s_grey
+	background-color: #e5e5e5
+	&:before
+		background-image: url("img/bah_3.png")
+	.section-button
+		background-color: #d6d6d6
+		padding: 52px 0
+		text-align: center
+
+.section-pb  
+	padding-bottom: 70px
+
+.cards
+	text-align: center
+	perspective: 600px
+	.card
+		//&-on
+		//	opacity: 1
+		//&-off
+		//	transform: rotateY(100deg)
+			//opacity: 0
+		width: 260px
+		transition: all 1s ease
+		display: inline-block
+		background-color: #2c3949
+		margin: 0 12px
+		color: #97a4b2
+		font-size: em(15px)
+		line-height: em(22px)
+		padding: 54px 27px 48px
+		vertical-align: top
+		h4 
+			color: #e5e5e5
+			font-family: "RelewayBold", $helvetica
+			font-size: em(18px)
+			margin-top: 30px
+			margin-bottom: 17px
+		p 
+			margin-bottom: 0
+			height: 75px
+			strong
+				font-family: "RelewayBold", $helvetica
+				color: $main-color
+		.card-icon
+			width: 120px
+			height: 120px
+			line-height: 120px
+			background-color: $main-color
+			border-radius: 10em
+			display: inline-block
+			img
+				width: 70px
+				
+//ALWAYS END
+@import "_media.sass"

@@ -1,0 +1,182 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	.main-mnu
+	display: none
+	min-width: 295px
+	margin-top: 10px
+	float: right
+	text-align: right
+	background-color: #1c242c
+	font-size: em(18px)
+	border-top: #232d3b 3px solid
+	border-bottom: #111821 2px solid
+	position: absolute
+	right: 15px
+	top:50px
+	z-index: 2
+	ul 
+		li 
+			display: block
+			line-height: 0
+			padding: 0
+			a 
+				display: block
+				line-height: 48px
+				padding: 0 20px
+				background-color: transparent
+				transition: all .5s ease
+				&:hover 
+					background-color: #273646
+
+	.phone
+		padding-right: 62px
+
+	.s3-img-wrap
+		margin-left: 82px
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+
+	.s3-img-wrap
+		display: none
+
+	.section_3 
+		.info-item-wrap .info-item
+			margin: 0 0 35px 0!important
+		.section-content
+			background-image: none
+			min-height: auro
+	.info-item-wraper
+		display: none
+
+	.header-wrap 
+		margin-top: 0
+		h1
+			margin-top: 0
+	/*======SECTION 1 ===========*/
+.section-content
+	.s1-bottom-triangle
+		background-size: cover
+
+	.section_1 
+		.s1_bottom
+			.info-item
+				margin: 40px 0
+				height: auto!important		
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+
+	/*Disable Animation on Mobile Devices*/
+	.animated
+		/*CSS transitions*/
+		-o-transition-property: none !important
+		-moz-transition-property: none !important
+		-ms-transition-property: none !important
+		-webkit-transition-property: none !important
+		transition-property: none !important
+		/*CSS transforms*/
+		-o-transform: none !important
+		-moz-transform: none !important
+		-ms-transform: none !important
+		-webkit-transform: none !important
+		transform: none !important
+		/*CSS animations*/
+		-webkit-animation: none !important
+		-moz-animation: none !important
+		-o-animation: none !important
+		-ms-animation: none !important
+		animation: none !important
+
+.section-content
+	.info-item
+	max-width: 100%
+	margin-top: 20px
+	margin-bottom: 20px
+		
+
+	.s1-bottom 
+		.info-item
+			border-color: #546476
+			display: inline-block
+
+	.info-item-wrap:last-child			
+		.info-item
+			border-color: transparent
+
+	.info-item-wrap:nth-child(2) 
+		.info-item 
+			margin-top: 0px
+
+
+	.section_1
+		.section-content
+			background-position: bottom
+
+	.section_3
+		.section-content
+			padding-top: 10px
+			.info-item
+				border-color: #546476 
+				p 
+					margin-bottom: 0
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.phone-wrap
+		.phone
+			font-size: em(17px)
+			line-height: 34px
+			padding-right: 45px
+	.toggle-mnu 
+		line-height: 34px
+		margin-top: 15px
+
+	.logo
+		img 
+			width: 80px
+
+	.s2-item-wrap
+		padding: 0 10px
+		width: 140px
+
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/ 
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	.main-mnu
+		display: block
+

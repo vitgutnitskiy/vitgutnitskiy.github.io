@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Form</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/fonts.css">
+</head>
+<body>
+	<div class="wrapper"> <!-- Wrapper -->
+
+		<div class="wrapper__header">
+			<ul class="navigation">
+				<li class="active"><a href="#">Login</a></li>
+				<li><a href="#">Sign up</a></li>
+			</ul>
+		</div>
+
+		<form class="form__fedback" action="#"> <!-- form -->
+
+			<div class="feedback__group-top">
+				<span class="left">
+					<img src="img/arrow_fb.png" alt="">
+				</span>
+				<span class="top">Login with Facebook</span>
+				<span class="bottom">or fill the form below to sign in</span>
+				<span class="right">
+					<img src="img/arrow-right.png" alt="">
+				</span>
+			</div>
+
+			<div class=" feedback__group">
+				<input type="email" class="feedback__input" id="email" placeholder="Email" name="email" required>
+			</div>
+
+			<div class=" feedback__group">
+				<input id="password" name="password"class="feedback__input" required="required" type="password" placeholder="Password" /> 
+			</div>
+
+			<div class=" feedback__group">
+				<input type="checkbox" name="loginkeeping" class="feedback__box"  id="loginkeeping" value="loginkeeping" /> 
+				<label class="feedback__remember" for="loginkeeping">Remember me</label>
+				<button type="submit" class="feedback__button">Login</button>
+			</div>
+			
+		</form>	<!-- end fo form -->
+	</div> <!-- end fo wrapper -->
+
+</body>
+</html>
